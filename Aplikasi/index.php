@@ -51,7 +51,7 @@ if (isset($_GET['edit'])) {
     $edit_data = $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-$stmt = $pdo->query("SELECT * FROM mahasiswa ORDER BY id DESC");
+$stmt = $pdo->query("SELECT * FROM mahasiswa ORDER BY id ASC");
 $mahasiswa_list = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
